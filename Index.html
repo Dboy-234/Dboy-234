@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snake Chase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<link rel="manifest" href="manifest.json" />
+<body>
+  <div id="welcome-screen">
+    <h1 class="title">Snake Chase</h1>
+    <img src="snake-icon.png" class="snake-icon" />
+    <button id="play-btn" class="play-btn">Play</button>
+  </div>
+
+  <div id="game-container" class="hidden">
+    <div id="score-board">Score: 0</div>
+
+    <canvas id="game-canvas"></canvas>
+
+    <div id="controls">
+      <div class="arrow-row">
+        <button id="up" class="arrow-btn">↑</button>
+      </div>
+      <div class="arrow-row">
+        <button id="left" class="arrow-btn">←</button>
+        <button id="right" class="arrow-btn">→</button>
+      </div>
+      <div class="arrow-row">
+        <button id="down" class="arrow-btn">↓</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('play-btn').onclick = () => {
+      document.getElementById('welcome-screen').classList.add('hidden');
+      document.getElementById('game-container').classList.remove('hidden');
+    };
+  </script>
+</body>
+</html>

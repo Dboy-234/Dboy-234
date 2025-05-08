@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#welcome-screen {
+  padding-top: 40px;
+}
+
+.title {
+  font-size: 32px;
+  color: #00e676;
+  text-shadow: 0 0 10px #00e676;
+}
+
+.snake-icon {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #00e676;
+}
+
+.play-btn {
+  background: #00e676;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00e676;
+}
+
+#score-board {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#game-canvas {
+  margin-top: 10px;
+  background: white;
+  border: 3px solid #00c853;
+}
+
+#controls {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+}
+
+.arrow-row {
+  margin: 5px 0;
+}
+
+.arrow-btn {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  background: #00c853;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 6px #00c853;
+  margin: 4px;
+}
